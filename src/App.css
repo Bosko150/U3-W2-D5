@@ -1,38 +1,54 @@
 .App {
-  text-align: center;
+  text-align: start;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.mainDiv {
+  background-image: url(../src/assets/wallpaperflare.com_wallpapermain.jpg);
+  background-position: center;
+  background-size: cover;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.error-div {
+  background-image: url(../src/assets/pexels-walidphotoz-847402.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.weather-div {
+  background-image: url(../src/assets/olivia-bliss-HTnycx0h_kk-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+::placeholder {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+input:focus {
+  outline: none;
+  border: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-transwhite {
+  color: rgba(255, 255, 255, 0.733);
+}
+.navbar-brand:hover {
+  cursor: pointer;
+}
+.forecast-row {
+  background-color: rgba(255, 255, 255, 0.137);
+  border-radius: 10px;
+}
+.footer-bg {
+  background-color: rgba(255, 255, 255, 0.096);
+}
+.text-custom {
+  color: rgb(7, 107, 189);
 }
